@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 
 .pacifico {
     font-family: "Pacifico", cursive;
@@ -18,9 +20,9 @@
 }
 :root{
     --bg-color: #080808;
-    --secondary-bg-color: #e4e4e4;
-    --main-color: #ff0000;
-    --text-color: #3c00ff;
+    --secondary-bg-color: #ff0000;
+    --main-color: #4b0202;
+    --text-color: #a8a8a8;
 }
 
 html {
@@ -29,4 +31,43 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color)
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pad: 2rem 10rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    transform: scale (1.03);
+}
+.logo span{
+    text-shadow: 0 0 5px var(--main-color);
+}
+.navbar a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 42rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    border-radius: 3px;
+}
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
