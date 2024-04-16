@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.pacifico {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 *{
     margin: 0;
     padding: 0;
@@ -12,12 +20,13 @@
     --bg-color: #080808;
     --secondary-bg-color: #e4e4e4;
     --main-color: #ff0000;
+    --text-color: #3c00ff;
 }
 
 html {
     overflow-x: hidden;
 }
 body {
-    background-color: var --bg-color;
-    color: var (--text-color)
+    background-color: var(--bg-color);
+    color: var(--text-color)
 }
